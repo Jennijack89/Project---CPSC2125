@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <!--Bootstrap Css Sheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--------JQuery CDN-------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+  <!-----------------Logo/ Login Button---------------------->
+    <div role="banner" class="row pt-2">
+      <header class="col-lg-12">
+        <div aria-label="Site Logo">
+      <img class="float-start mb-2" src="Images/Visit Columbus Logo.jpg" alt="Come Visit Columbus Logo">
+        </div>
+        
+      <!----------Login Button (links to Form page------->
+        <div role="button" class="mt-5">
+           <a href="Forms.html" class="btn btn-danger float-end" role="button" title="Sign up to gain Access to our member's page.">Sign Up | Login</a>
+        </div>
+      </header>
+      </div>
+    <!----------------------------NavBar/ Logo------------------------------->
+    <div role="navigation" class="row">
+      <nav class="col-lg-12 navbar navbar-expand-md navbar-dark bg-secondary">
+        <a href="" class="navbar-brand h1"> Menu </a>
+        
+        
+        <!---------------------Menu Toggle Button---------------------->
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler bg-danger float-end" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!---Fix Toggler to go to Nav and not pictures---->
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content text-warning h5" id="navbarNav">
+          <ul class="nav">
+            <li class="nav-item active"><a href="index.html" class="nav-link active text-warning">Home</a></li>
+            <li class="nav-item"><a href="Page1.html" class="nav-link text-warning">Things To Do</a></li>
+            <li class="nav-item"><a href="Page2.html" class="nav-link text-warning">Outdoor Activities</a></li>
+            <li class="nav-item"><a href="Page3.html" class="nav-link text-warning">History & The Arts</a></li>
+          </ul>
+        </div>  
+       
+      </nav>  
+    </div>
+    <!------------------Header---------------------------->
+    <div class="row" role="heading" aria-level="1">
+      <header class="col-sm-12 bg-dark display-none headerimg" style="background-image: url(Images/Riverwalk-at-Night-Things-to-do-in-Columbus-Georgia-1600x900.jpg); height: 200px;">
+        <h1 class="text-light m-4  ">Nature Lovers</h1>
+        <h5 class="text-light mx-4"> Clear your mind and get refreshed in the great outdoors.</h5>
+      </header>
+    </div>
+
+    <!--------------------------------Row 1------------------------>
+    <div class="row">
+    <!----------------------------Carousel 1 ----------------------->
+      <picture class="col-md-6 bg-danger mt-2 rounded border border-dark border-2" style="">
+      <div id="coverCarousel" class="carousel slide " data-bs-ride="carousel">
+          <!---------Indicators----------------------------->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="1">             </button>
+            <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="2">              </button>
+            <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="3">              </button>
+            <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="4">              </button>
+          </div>
+        <!----------------------Inner Pictures ------------------------>
+          <div class="carousel-inner p-2 ">
+            <div class="carousel-item active"> 
+              <img src="Images/RiverFront-Splash-Pad.jpg" alt="Children playing on the splash pad" class="d-block carouselFormat" >
+            </div>
+            <div class="carousel-item " style="">
+              <img src="Images/library-park.jpg" alt="Park Behind Columbus Public Library on Mascon Rd." class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/cascade-hills.jpg" alt="Children on zipline at Cascade Hills Park" class="d-block carouselFormat " >
+            </div>
+           <div class="carousel-item" style="">
+              <img src="Images/Flat-rock-park1.jpg" alt="Falls at Flatrock Park" class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/cooper-creek.jpg" alt="Hill Trail by lake at Cooper Creek" class="d-block w-100 " >
+            </div>
+              
+          </div>
+        <!------------------Prev and Next Arrows---------------------->
+          <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+       </picture>
+      <!--------------------Row 1 Section 1---------------------------->
+       <section class="col-md-6 bg-light" style="" >
+         <div class="bg-danger mt-2 p-3 border border-dark border-2 rounded">
+           <h3 class="headers text-light text-center">Columbus Parks</h3>
+           <p class="text-light"> Columbus offers multiple parks where you can enjoy the fresh air, let the kids play, or take a hike. Some of our parks have tennis and basketball courts as well as baseball, football and soccer fields; were you can have a picnic or enjoy some outdoor sports.<p>
+            <p class="text-light"> Columbus Fall line Trace offers over 10 miles of walking, running, or biking trail that extends through out the city. If mountain biking is more your style, visit Standing Boy Trail or Flat Rock Park for some off-road action. No bike, no problem, we have a few bike shops offering affordable rentals for the whole family. </p>
+           <h6 class(text-center)>(List of park names and places: google search for more information)</h6>
+           <ul class="list-group text-center">
+             <li class="list-group-item">Heath Park | Lake Bottom park</li>
+             <li class="list-group-item"> Cooper Creek | Cascade Hills Park</li>   
+             <li class="list-group-item">Flat rock Park | Standing Boy Trail</li>
+         </div>
+       </section>
+    <!----------------------Row 2 ---------------------------->
+    <div class="row">
+      <section class="col-md-6 bg-light">
+        <div class="bg-warning mt-2 p-3 border border-dark border-2 text-dark rounded">
+          <h3 class="headers text-center">Explore</h3>
+          <p class="">
+            Eplore space and our universe at the <a href="https://www.ccssc.org/">Coca-Cola Space and Science Center</a>, sponsored by Columbus state University. Your family can enjoy a sky tour and planetarium show in the Omnisphere Theater, or test your piloting skills on our interactive exhibits and so much more!</p>
+            <p>Smell the roses, learn about horticulture, or enjoy a colorful setting for family photos at <a href="https://columbusbotanicalgarden.org/">Columbus Botanicle Gardens</a>. It is located on 36 acres of land in north Columbus, GA. The Gardens consist of 4 developed acres and a beatiful walking trail throughout the remaining landscape.</p>
+          <p>If you are more interested in reptiles, amphibians and creepy crawlies, come visit <a href="https://oxbow.columbusstate.edu/">Oxbow Meadows </a>sponsored by Columbus State University. Here your family will get up close and personal with nature, and participate in hands on activites and learning facilitated by knowledgable instructors. Each organization hosts seasonal events and activites for children and adults of all ages. suggested $5.00 donation for entry to both of these amazing places. <br><br>
+            <footer class="blockquote-footer">From CoCa-Cola Space and Science Center | Columbus Botanical Gardens | Oxbow Meadows Websites. Website Linked.</footer>
+          </p>
+ 
+          <br>
+        </div>
+      </section>
+    <!---------------------Carousel 2 ----------------------------->
+      <picture class="col-md-6 bg-warning mt-2 rounded border border-dark border-2" style="">
+      <div id="coverCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <!---------Indicators----------------------------->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coverCarousel2" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#coverCarousel2" data-bs-slide-to="1">             </button>
+            <button type="button" data-bs-target="#coverCarousel2" data-bs-slide-to="2">              </button>
+            <button type="button" data-bs-target="#coverCarousel2" data-bs-slide-to="3">              </button>
+            <button type="button" data-bs-target="#coverCarousel2" data-bs-slide-to="4">              </button>
+          </div>
+        <!----------------------Inner Pictures ------------------------>
+          <div class="carousel-inner p-2">
+             <div class="carousel-item active"> 
+              <img src="Images/Coca-Cola-Spaceboy.jpg" alt="Youngboy looking at a Rocket" class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/col-b-gardens.jpg" alt="Columbus Botanical gardens" class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/man-in-col-gardens.jpg" alt="Man in Blooming Columbus botanical gardens" class="d-block carouselFormat  " >
+            </div>
+           <div class="carousel-item" style="">
+              <img src="Images/Oxbow-Meadows1.jpg" alt="Boy petting turtle at Oxbow Meadows" class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/OxbowMeadows2017SepSulcata.jpg" alt="Boy sitting on dock while instructor teaches while standing in swamp - Oxbow Meadows" class="d-block carouselFormat  " >
+            </div>
+              
+          </div>
+        <!------------------Prev and Next Arrows---------------------->
+          <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel2" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+       </picture>
+      <!--------------------row 3-------------------------------->
+      <div class="row">
+      <!-------------------Carousel 3---------------------------->
+        <picture class="col-md-6 bg-info p-2 mt-2 mb-2 rounded border border-dark border-2" style="">
+      <div id="coverCarousel3" class="carousel slide " data-bs-ride="carousel">
+          <!---------Indicators----------------------------->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coverCarousel3" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#coverCarousel3" data-bs-slide-to="1">             </button>
+            <button type="button" data-bs-target="#coverCarousel3" data-bs-slide-to="2">              </button>
+            <button type="button" data-bs-target="#coverCarousel3" data-bs-slide-to="3">              </button>
+            <button type="button" data-bs-target="#coverCarousel3" data-bs-slide-to="4">              </button>
+          </div>
+        <!----------------------Inner Pictures ------------------------>
+          <div class="carousel-inner ">
+             <div class="carousel-item active"> 
+              <img src="Images/crossing-the-swing-bridge-whitewater-express.jpg" alt="Young girl on Blue Heron Rope Course" class="d-block carouselFormat" >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/carnage-tour-chattahoochee-whitewater-express-1024x683.jpg" alt="Group of people white water rafting" class="d-block carouselFormat" >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/paddle-board-yoga-chattahoochee-whitewater-express.jpg" alt="girl on Paddle Board on the Chattahoochie River" class="d-block carouselFormat " >
+            </div>
+           <div class="carousel-item" style="">
+              <img src="Images/whitewater_zip.jpg" alt="3 people about to Zipline" class="d-block carouselFormat " >
+            </div>
+            <div class="carousel-item" style="">
+              <img src="Images/girl-under_fountain.jpg" alt="Girl on scooter under fountain" class="d-block carouselFormat " >
+            </div>
+              
+          </div>
+        <!------------------Prev and Next Arrows---------------------->
+          <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel3" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+       </picture>
+      <!------------------Row 3 Section 3--------------------->
+        <section class="col-md-6 bg-light" style="">
+         <div class="bg-info mt-2 mb-2 p-3 border border-dark border-2 text-dark rounded">
+           <h3 class="headers text-center">Experience </h3>
+           <p> Grad your family and friends and do something thrilling! Come experience raftng on the longest urban whitewater rafting course in the world! You can also visit our Blue Heron Adventure Park and zip across the Chattahoochee River from Georgia to Alabama! This is the only dual zip line in the United States that connects two states! </p><br><br>
+           <footer class="blockquote-footer">From Visitcolumbusga.com & <a href="https://chattahoochee.whitewaterexpress.com/zipline-adventure-park/">chattahoochee.whitewaterexpress.com</a><</footer>
+         </div>
+       </section>
+      </div>
+
+    <div class="row">
+      <footer class="col-sm-12 bg-secondary text-dark small">
+        <br>
+        <p><img src="Images/Columbus-Ga.jpg">
+        Visiti Columbus Project - CPSC 2125 by Jennifer L. Jackson</p>
+        <p>Contact: 706-856-2448 Email: <a href="mailto:jennifer_marshall3@columbusstate.edu"> jennifer_marshall3@columbusstate.edu</a></p>
+        <p>Address: 123 ABC Lane Columbus Ga, 31907   &copy November 14, 2022</p>
+        <p id="modified"> </p>
+        <p> </p>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <!--Bootstrap Javascript sheet-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+ <!--------JQuery CDN-------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  
+</body>
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

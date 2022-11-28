@@ -1,0 +1,90 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* Carousel Images on Home Page*/
+.carousel-item {
+  height: 360px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------------Image Icon's on Page1------------*/
+p>a>img{
+  width: 6%;
+}
+
+section>a>img{
+  width: 10%;
+  float: right;
+}
+
+/*-------------Image Icon on Page 3-------------*/
+.imgp3{
+  width: 15%;
+}
+
+/*------------Image in Footer----------- */
+footer>p>img{
+  width:15%;
+  float: right;
+}
+
+.headers{
+  font-family:;
+}
+
+/*--------------Carousel Imaged on OutDoor Activites Page----------*/
+.carouselFormat{ 
+  height:100%;
+  width: 100%;
+}
+
+/*-------------header background class-----------------*/
+
+.headerimg{
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------------*/
+
+.hfont{
+  font-size:20;
+}
+
+
+
+/*--------Class for slide panels---- */
+.panel, .flip {
+  text-align:;
+}
+
+.panel {
+  display: none;
+  
+}
+
+.panel1, .flip1 {
+  text-align:;
+  
+}
+
+.panel1 {
+  display: none;
+  
+}
+
+.panel2, .flip2 {
+  text-align: ;
+}
+
+.panel2 {
+  display: none;
+}
+

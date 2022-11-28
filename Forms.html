@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <!--Bootstrap Css Sheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--------JQuery CDN-------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+ <!-----------------Logo/ Login Button---------------------->
+    <div role="banner" class="row pt-2">
+      <header class="col-lg-12">
+        <div aria-label="Site Logo">
+      <img class="float-start mb-2" src="Images/Visit Columbus Logo.jpg" alt="Come Visit Columbus Logo">
+        </div>
+        
+      <!----------Login Button (links to Form page------->
+        <div role="button" class="mt-5">
+           <a href="Forms.html" class="btn btn-danger float-end" role="button" title="Sign up to gain Access to our member's page.">Sign Up | Login</a>
+        </div>
+      </header>
+      </div>
+    <!----------------------------NavBar/ Logo------------------------------->
+    <div role="navigation" class="row">
+      <nav class="col-lg-12 navbar navbar-expand-md navbar-dark bg-secondary">
+        <a href="" class="navbar-brand h1"> Menu </a>
+        
+        <!---------------------Menu Toggle Button---------------------->
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler bg-danger float-end" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!---Fix Toggler to go to Nav and not pictures---->
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content text-warning" id="navbarNav">
+          <ul class="nav">
+            <li class="nav-item active"><a href="index.html" class="nav-link active text-warning">Home</a></li>
+            <li class="nav-item"><a href="Page1.html" class="nav-link text-warning">Things To Do</a></li>
+            <li class="nav-item"><a href="Page2.html" class="nav-link text-warning">Outdoor Activities</a></li>
+            <li class="nav-item"><a href="Page3.html" class="nav-link text-warning">History & The Arts</a></li>
+          </ul>
+        </div>  
+       
+      </nav>  
+    </div>
+    <!------------------Header---------------------------->
+    <div role="heading" aria-level="1"class="row">
+      <header class="col-sm-12 bg-warning display-none">
+        <h1></h1>
+      </header>
+    </div>
+
+  <div class="row">
+    <!---------------------Login Form---------------------->
+    <section role="form" class="col-md-6 " >
+      <div class="border-end border-danger border-3" id="login_div">
+      <form  class="rounded bg-dark text-light m-2 p-2 " action="" method="post">
+        <!----------UserName--------->
+        <div>
+          <label for="usrName" class="form-label "> Username / Create Username:</label>
+          <input type="text" class="form-control" id=usrName minlength="5" maxlength="10" placeholder="Enter Username" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!----------Email--------->
+        <div>
+          <label for="email" class="form-label"> Enter Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!----------PassWord(s)--------->
+        <div>
+          <label for="pssWrd" class="form-label"> Password:</label>
+          <input type="password" class="form-control" id="pssWrd" placeholder="HappyDay123*" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title= "Must contain at least one number, one uppercase and lowercase letter and at least 8 or more characters" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+      
+        <!--<div>
+          <label for="rePssWrd" class="form-label"> Password:</label>
+          <input type="password" class="form-control" id="rePssWrd" placeholder="HappyDay123*" minlength="8" required >
+        </div>-->
+        <button type="button" class="btn btn-primary m-2" id="login" onclick="SaveDisappear" >Login</button>
+     </form>
+      </div>
+      <!--------------------Temporary Thanks for Signing up screen-------->
+      <div class="rounded bg-dark text-light m-2 p-2" style="display: none;" id="Temp">
+        <h6> You are Signed Up!</h6>
+        <p id="tempSignup"></p>
+        <button type="button" class="btn btn-primary m-2" id="tempbtn" onclick="Continue"> Continue </button>
+      </div>
+      <!--------------------Discussion Board------------------->
+      <div id="dBoardbox" clas="bg-warning rounded" style="display:none">
+        <form class="bg-secondary p-4 m-2 rounded">
+          <h3 class="text-center text-dark" title="Enter a post below and connect with other member's"> Join The Discussion</h3>
+         <div>
+           <label for="dBoard" class="form-label"> Discussion Board Comments:</label>
+           <textarea class="form-control" rows="5" id="dBoard" name="dBoard"></textarea>
+         </div>
+         <div>
+           <br>
+           <button type="button" class="btn btn-primary" id="post" onclick="PostDiscBValues" title="Add Post to Discussion Board">Post</button>
+         </div>
+       </form>
+      </div>
+    </section>
+   
+    <!---------------------Discussion Board Posts--------------------------------->
+    <section class="col-md-6 bg-danger text-light border border-dark border-1 rounded mt-2 mb-2" style="display: none;" id="disBoard">
+      
+      <h3 class="text-center">Discussion Board</h3>
+      <p id="dBoardPost" class=""></p>
+      
+    </section>
+  </div>
+  <!---------------------------------Notes----------------------------------->
+  <div class="row">
+
+    <!----------------------Post Notes ------------------------>
+    <section class="col-md-6" style="display:none" id="notes"> 
+      
+      <form class="bg-secondary p-4 rounded">
+        <h3 class="text-center text-dark" title="Add notes for all the places you would like to visit in Columbus Ga!"> Create A Note</h3>
+         <div>
+           <label for="entrNotes" class="form-label"> Notes:</label>
+           <textarea class="form-control" rows="1" id="entrNotes" name="entrNotes"></textarea>
+         </div><br>
+        <button type="button" class="btn btn-primary" id="post1" onclick="PostNoteVal" title="Add Note to Note board">Add</button>
+        <button type="button" class="btn btn-primary" id="deleteAll" onclick="DeleteAll" title="Delete All Notes entered">Delete</button>
+       </form>
+      <p></p>
+      
+    </section>
+
+        <!---------------------Notes Board-------------------------------------->
+    <section class="col-md-6 bg-warning text-light border border-dark border-1 rounded mt-2 mb-2" id="notesBoard" style="display: none;">
+      <h3 class="text-center">My Notes</h3>
+     <p id="notesBoardpost" class="text-dark border border-dark rounded"></p>
+
+      
+    </section>
+    
+  </div>
+      <!----------------------Footer------------------------------------->
+  <div class="row">
+      <footer class="col-sm-12 bg-secondary text-dark small">
+        <br>
+        <p><img src="Images/Columbus-Ga.jpg">
+        Visiti Columbus Project - CPSC 2125 by Jennifer L. Jackson</p>
+        <p>Contact: 706-856-2448 Email: <a href="mailto:jennifer_marshall3@columbusstate.edu"> jennifer_marshall3@columbusstate.edu</a></p>
+        <p>Address: 123 ABC Lane Columbus Ga, 31907   &copy November 14, 2022</p>
+        <p id="modified"> </p>
+        <p> </p>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <!--Bootstrap Javascript sheet-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+ <!--------JQuery CDN-------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <!--Bootstrap Css Sheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--------JQuery CDN-------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    
+    <!-----------------Logo/ Login Button---------------------->
+    <div role="banner" class="row pt-2">
+      <header class="col-lg-12">
+        <div aria-label="Site Logo">
+      <img class="float-start mb-2" src="Images/Visit Columbus Logo.jpg" alt="Come Visit Columbus Logo">
+        </div>
+        
+      <!----------Login Button (links to Form page------->
+        <div role="button" class="mt-5">
+           <a href="Forms.html" class="btn btn-danger float-end" role="button" title="Sign up to gain Access to our member's page.">Sign Up | Login</a>
+        </div>
+      </header>
+      </div>
+    <!----------------------------NavBar/ Logo------------------------------->
+    <div role="navigation" class="row">
+      <nav class="col-lg-12 navbar navbar-expand-md navbar-dark bg-secondary h1">
+        <a href="" class="navbar-brand h1"> Menu </a>
+        
+        <!---------------------Menu Toggle Button---------------------->
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler bg-danger float-end" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!---Fix Toggler to go to Nav and not pictures---->
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content text-warning h5" id="navbarNav">
+          <ul class="nav">
+            <li class="nav-item active"><a href="index.html" class="nav-link active text-warning">Home</a></li>
+            <li class="nav-item"><a href="Page1.html" class="nav-link text-warning">Things To Do</a></li>
+            <li class="nav-item"><a href="Page2.html" class="nav-link text-warning">Outdoor Activities</a></li>
+            <li class="nav-item"><a href="Page3.html" class="nav-link text-warning">History & The Arts</a></li>
+          </ul>
+        </div>      
+       
+      </nav>  
+    </div>
+    <!------------------Header---------------------------->
+    <div class="row " role="heading" aria-level="1">
+      <header class="col-sm-12 bg-dark display-none headerimg " style="background-image: url(Images/Columbus-GA-Civic-Center-and-Ice-Rink.jpg); height: 200px;">
+        <h1 class="  text-warning m-4"> Leisure Activities </h1>
+        <h5 class="text-warning mx-4">-Find fun activities and reconnect with your family. </h5>
+      </header>
+    </div>
+    <!--------------Picture 1-------------->
+  <div role="img" class="row ">
+      <picture class="col-sm-4 bg-secondary border-top border-warning border-3" style="">
+        <h3 class="text-center"></h3>
+        <div class="bg-info p-2 rounded bg-dark">
+          <img src="Images/bowling.jpg" class="rounded mx-auto d-block img-fluid" alt="Family Bowling">
+        </div>
+      </picture>
+    <!---------------Picture 2 --------------->
+    <picture class="col-sm-4 bg-secondary border-top border-warning border-3" style="">
+        <h3 class="text-center"></h3>
+        <div class="bg-info p-2 rounded bg-dark">
+          <img src="Images/kids-climb.jpg" class="rounded mx-auto d-block img-fluid" alt="Children on Climbing Wall" ">
+        </div>
+      </picture>
+    <!-------------Picture 3----------------->
+    <picture class="col-sm-4 bg-secondary border-top border-warning border-3" style="">
+        <h3 class="text-center"></h3>
+        <div class="bg-info p-2 mb-2 rounded bg-dark">
+          <img src="Images/Movie-Th.jpg" class="rounded mx-auto d-block img-fluid" alt="Couple enjoying AMC Theatre">
+        </div>
+      </picture>
+  </div>
+
+    <!---------------Main 1------------------------>
+    <div role="heading" aria-level="2" class="row">
+      <main class="col-md-4 bg-secondary border-end border-light border-3 " style="">
+        <div class="flip bg-info pt-6 rounded" role="button" aria-pressed="false">
+          <h3 class="headers text-light p-3 text-center " tabindex="0">Play</h3>
+        </div>
+        <div class="  panel">
+         <p class="bg-info text-dark rounded p-4"> Columbus offer's many places where you and your family can join in a friendly compeition or just have fun! <br><br> On Friday nights Midtown Coffee hosts Trivia night and every other Saturday night Harvest Coffee Co. hosts a game night sponsored by <a href="https://www.gotgamega.com/game-nights">Columbus Got Game,</a> where you can choose from a variety of board games, join in a friendlygame and meet new people. There are many places that offer billards games, as well as bowling, arcade games, mini golf and more. I've listed a few of the venues below. </p>
+          <ul class="list-group">
+            <li class="list-group-item">Hollywood Connection</li>
+            <li class="list-group-item"><a href="https://www.starsandstrikes.com/event_venues_columbus_ga/">Stars & strikes</a></li>
+            <li class="list-group-item">Bowleros</li>
+            <li class="list-group-item">Billards on Broad</li>
+          </ul><br>
+          </div>
+      </main>
+    
+    <!----------------------Main 2 ---------------------------->
+      <main role="heading" aria-level="2" class="col-md-4 bg-secondary border-end border-light border-3">
+        
+        <div role="button"class="flip1 bg-info pt-6 rounded">
+          <h3 class="headers text-light p-3 text-center" tabindex="0" role="button" aria-pressed="false" >Get Active</h3>
+        </div>
+        <div class="rounded panel1 ">
+          <p class="bg-info text-dark rounded p-4">
+Looking for an activity that will get your blood pumping? Columbus has 2 trampoline parks and a rock climbing gym where you can defy gravity and jump until your hearts content.<br><br> Learn to shoot at Shooters or pick up axe throwing at Stumpy's. Whether on land, ice, or in a rink we have a place for every skater. For those rainy days, the (bowling center) on fort benning offer's an indoor playground the whole family can enjoy. 
+          </p>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.treadstoneclimbing.com/"> TreadStone </a></li>
+            <li class="list-group-item"><a href="https://launchtrampolinepark.com/columbus/"> Launch Trampoline Park</a></li>
+            <li class="list-group-item"><a href="https://www.skyzone.com/columbus-ga"> Sky Zone </a></li>
+            <li class="list-group-item"><a href="https://shootersofcolumbus.com/"> Shooters</a></li>
+          </ul><br>
+        </div>
+        </main>
+     
+        
+      <!------------------Main 3----------------------------->
+      <main role="heading" aria-level="2" class="col-md-4 bg-secondary border-end border-light border-3" style="">
+        <div class="flip2 bg-info pt-6 text-center rounded" role="button">
+          <h3 class="headers text-light p-3" tabindex="0" role="button" aria-pressed="false">Entertainment</h3>
+        </div>
+        <div class="panel2 ">
+         <p class="bg-info text-dark rounded p-4 "> Enjoy a night out, get some popcorn and catch a move on the big screen. Columbus has multiple movie theatres that offer different prices and showtimes to meet every families needs.<br><br> If you're more of a sports fans, We have 3 semi-professional sports teams to include Ice hockey, Baseball, and arena football with talk of a basketball team coming to our area soon. Come catch a game and enjoy comradery with our adoring fans.   
+        </p>
+          <ul class="list-group">
+            <li class="list-group-item">AMC Theatres</li>
+            <li class="list-group-item"><a href="https://www.columbuslions.net/"> Columbus Lions - Arena Football</a></li>
+            <li class="list-group-item"><a href="https://www.rdragons.com/"> Columbus River Dragons - Ice Hockey</a></li>
+            <li class="list-group-item"><a href="https://www.gohoots.com/"> Chatt-a-Hoots - Baseball</a></li>
+          </ul>
+          </div>
+      </main>
+    </div>
+      
+
+    <div class="row">
+      <footer class="col-sm-12 bg-secondary text-dark small">
+        <br>
+        <p><img src="Images/Columbus-Ga.jpg">
+        Visiti Columbus Project - CPSC 2125 by Jennifer L. Jackson</p>
+        <p>Contact: 706-856-2448 Email: <a href="mailto:jennifer_marshall3@columbusstate.edu"> jennifer_marshall3@columbusstate.edu</a></p>
+        <p>Address: 123 ABC Lane Columbus Ga, 31907   &copy November 14, 2022</p>
+        <p id="modified"> </p>
+        <p> </p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <!--Bootstrap Javascript sheet-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
